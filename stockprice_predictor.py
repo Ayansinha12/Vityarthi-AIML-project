@@ -6,7 +6,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 
 # Load dataset
-data = pd.read_csv('stock_data_2000_2025.csv')
+data = pd.read_csv('https://github.com/Ayansinha12/Vityarthi-AIML-project/blob/main/stock_data_2000_2025.csv')
 
 # Convert Date column
 data['Date'] = pd.to_datetime(data['Date'])
