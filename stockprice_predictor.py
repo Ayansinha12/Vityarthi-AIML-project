@@ -6,7 +6,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 
 # Load dataset
-data = pd.read_csv('https://github.com/Ayansinha12/Vityarthi-AIML-project/blob/main/stock_data_2000_2025.csv')
+data = pd.read_csv('https://raw.githubusercontent.com/Ayansinha12/Vityarthi-AIML-project/main/stock_data_2000_2025.csv')
 
 # Convert Date column
 data['Date'] = pd.to_datetime(data['Date'])
@@ -32,7 +32,7 @@ days_range = int(input("Enter number of days to display around date: "))
 start_date = input_date - pd.Timedelta(days=days_range)
 end_date = input_date + pd.Timedelta(days=days_range)
 
-filtered_data = data[(data['Date'] >= start_date) & 
+filtered_data = data[(data['Date'] >= start_date) &
                      (data['Date'] <= end_date)].copy()
 X_range_poly = poly.transform(filtered_data[['Date_ordinal']])
 filtered_data['Predicted'] = model.predict(X_range_poly)
