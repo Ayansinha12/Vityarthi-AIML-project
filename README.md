@@ -1,8 +1,8 @@
-overview
+## overview
 
 This script is an interactive Stock Price Prediction and Visualization Tool. It uses machine learning—specifically, Polynomial Regression—to model historical stock prices over time. By converting calendar dates into numerical values (ordinals), the script trains a model
 
-Features
+## Features
 
  Historical Data Preprocessing: Automatically reads the CSV dataset, handles chronological sorting, and converts standard calendar dates into mathematical ordinal values so they can be processed by the machine learning algorithm.
 
@@ -16,7 +16,7 @@ Comparative Visualization: Generates a dual-line graph plotting the actual histo
 
 Targeted Point Annotation: Specifically zeroes in on the exact date the user requested, enlarging those data points on the graph and appending text labels with the exact numeric values for both the actual and predicted prices. 
 
-Technologies Used
+## Technologies Used
 
 
 Python (3.x): The core programming language powering the script.
@@ -51,7 +51,7 @@ Adding the specific price numbers next to the markers (plt.text).
 
 Formatting the chart with labels, a title, a legend, and a grid.instruction of testing
 
-installation & setup
+## Installation & setup
 
 1. Install Python
 Ensure you have Python 3 installed on your system. You can verify this by opening your terminal or command prompt and typing:
@@ -79,9 +79,13 @@ Execute the script by running.
 
 
 
-Quick Test
+## Quick Test
 Run your script in the terminal.
 
 When prompted for a date, type a date that you know exists in your dataset using the exact format requested.
 
 Verify the Output: A graph should immediately pop up displaying a 60-day window around your chosen date. Check that your specific date is clearly marked with a large dot for the actual price, an 'X' for the predicted price, and that the exact dollar amounts are written next to them
+
+## SCREENSHOT:
+https://github.com/Ayansinha12/Vityarthi-AIML-project/blob/main/CLI%20stock%20predictor.png
+https://github.com/Ayansinha12/Vityarthi-AIML-project/blob/main/working%20example.png
